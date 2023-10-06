@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="color:blue">
+        <form action="{{ url_for('getSimilarity')}}" method="post">
+            <h2>Text Similarity</h2>
+            <h3>Text 1</h3><textarea id="first" name="text1" rows="4" required="required">The easiest way to earn points with Fetch Rewards is to just shop for the products you already love. If you have any participating brands on your receipt, you'll get points based on the cost of the products. You don't need to clip any coupons or scan individual barcodes. Just scan each grocery receipt after you shop and we'll find the savings for you.</textarea>
+            <h3>Text 2</h3><textarea id="second" name="text2" rows="4" required="required">The easiest way to earn points with Fetch Rewards is to just shop for the items you already buy. If you have any eligible brands on your receipt, you will get points based on the total cost of the products. You do not need to cut out any coupons or scan individual UPCs. Just scan your receipt after you check out and we will find the savings for you.</textarea>
+            <h3>Text 3</h3><textarea id="third" name="text3" rows="4" required="required">We are always looking for opportunities for you to earn more points, which is why we also give you a selection of Special Offers. These Special Offers are opportunities to earn bonus points on top of the regular points you earn every time you purchase a participating brand. No need to pre-select these offers, we'll give you the points whether or not you knew about the offer. We just think it is easier that way.</textarea>
+            
+            <h3> Exclude Punctuation (defalut=No)</h3><input type="radio" name="punctuation" id="punct" value="yes">Yes &nbsp;&nbsp;&nbsp; <input type="radio" name="punctuation" id="punct"value="no">No</option>
+			
+            <h3>Exclude Stop Words (defalut=No)</h3><input type="radio" name="stopwords" id="stop" value="yes">Yes &nbsp;&nbsp;&nbsp; <input type="radio" name="stopwords" id="stop"value="no">No</option>
+			
+			<h3>Similarity Metric (defalut=Cosine)</h3><select name="similarity_method" id="method">
+				<option value="cosine">Cosine Similarity</option>
+                <option value="jaccard">Jaccard Index</option>
+                <option value="euclidian">Euclidian Distance</option>				
+            </select>
+			
+            <br><button id="sub" type="submit">Calculate the Text Similarity</button>
+            <br>
+        </form>
+
+        <br><br>
+		<div id="result" align="center">
+		<h3>Similarity Matrix<h3>
+		
+		<table>
+		  <tr>
+			<th> </th>
+			<th>Text 1</th>
+			<th>Text 2</th>
+			<th>Text 3</th>
+		  </tr>
+		  <tr>
+			<td>Text 1</td>
+			<td>1</td>
+			<td>{{ text_1_2 }}</td>
+			<td>{{ text_1_3 }}</td>
+		  </tr>
+		  <tr>
+			<td>Text 2</td>
+			<td>-</td>
+			<td>1</td>
+			<td>{{ text_2_3 }}</td>
+		  </tr>
+		  <tr>
+			<td>Text 3</td>
+			<td>-</td>
+			<td>-</td>
+			<td>1</td>
+		  </tr>
+		</table>
+		</div>
+    </div>
+
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("result");
+		  if (text_1_1 === "none") {
+			x.style.display = "block";
+		  } else {
+			x.style.display = "none";
+		  }
+		}
+	</script>
+
+
+    <style>
+        body {
+            background-color: lightslategray;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        #method {
+            font-size: 18px;
+            width: 100px;
+            height: 23px;
+            top: 23px;
+        }
+        
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+                
+        #method {
+            width: 200px;
+            height: 40px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #method:hover {
+            background-color: coral;
+        }
+                     
+        #sub {
+            width: 500px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+        
+        #first {
+            border-radius: 14px;
+            height: 75px;
+			width: 500px;
+            font-size: 15px;
+        }
+        
+        #second {
+            border-radius: 14px;
+            height: 75px;
+			width: 500px;
+            font-size: 15px;
+        }
+        
+        #third {
+            border-radius: 14px;
+            height: 75px;
+			width: 500px;
+            font-size: 15px;
+        }
+    </style>
+</body>
+
+</html>
