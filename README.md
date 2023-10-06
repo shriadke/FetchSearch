@@ -1,40 +1,41 @@
-# Coding Exercise - Text Similarity
+# Coding Exercise - Intelligent Text Search based on NLP
 
 ## Task
 
-This challenge is focused on the similarity between two texts. The objective is to write a program that takes as inputs two texts and uses a metric to determine how similar they are. Documents that are exactly the same should get a score of 1, and documents that don’t have any words in common should get a score of 0.
+This challenge is focused on the similarity between search texts. The objective is to build a tool that allows users to intelligently search for offers via text input from the user. Here is a program that takes as inputs a text sting and returns the best matched offers one can get on Fetch App.
+
 
 ## File Structure
 This repo contains python implementation of text similarity app. 
 
-1. [textSimilarity.ipynb](https://github.com/shriadke/Text-Similarity/blob/main/textSimilarity.ipynb)
+1. [fetchsearch.ipynb](https://github.com/shriadke/FetchSearch/blob/main/fetchsearch.ipynb)
 	The notebook  contains my initial approach towards this project and includes line by line implementation of my approach along with explanation.
 	
-2. [textSimilarity.py](https://github.com/shriadke/Text-Similarity/blob/main/textSimilarity.py)
-	This is the Python module that encapsulates all the differen methods performed in this approach along with appropriate comments. This module is further used by the API service in [app.py](https://github.com/shriadke/Text-Similarity/blob/main/app.py)
+2. [fetchsearch.py](https://github.com/shriadke/FetchSearch/blob/main/fetchsearch.py)
+	This is the Python module that encapsulates all the differen methods performed in this approach along with appropriate comments. This module is further used by the API service in [app.py](https://github.com/shriadke/FetchSearch/blob/main/app.py)
 
-3. [app.py](https://github.com/shriadke/Text-Similarity/blob/main/app.py)
-	This is the API POST service implementation of textSimilarity app that uses `get_text_similarity(texts)` method to compute the similarity matrix between 3 given texts.
+3. [app.py](https://github.com/shriadke/FetchSearch/blob/main/app.py)
+	This is the API POST service implementation of fetchsearch app that uses `get_text_similarity(texts)` method to compute the similarity matrix between 3 given texts.
 
-4. [templates/index.html](https://github.com/shriadke/Text-Similarity/blob/main/templates/index.html)
+4. [templates/index.html](https://github.com/shriadke/FetchSearch/blob/main/templates/index.html)
 	This is the web page which will be loaded to use the above service through a web browser.
 	
-5. [requirements.txt](https://github.com/shriadke/Text-Similarity/blob/main/requirements.txt)
+5. [requirements.txt](https://github.com/shriadke/FetchSearch/blob/main/requirements.txt)
 	This file contains the necessary packages required for this project.
 
-6. [Dockerfile](https://github.com/shriadke/Text-Similarity/blob/main/Dockerfile)
+6. [Dockerfile](https://github.com/shriadke/FetchSearch/blob/main/Dockerfile)
 	This file contains build instructions for API deployment using Docker.
 	
-7. [Procfile](https://github.com/shriadke/Text-Similarity/blob/main/Procfile)
+7. [Procfile](https://github.com/shriadke/FetchSearch/blob/main/Procfile)
 	This file is used to deploy the app using Heroku platform.
 
 ## Environment
 
-This project is implementes using Python 3.7, Flask 1.1.12, Jupyter Notebook and Spyder IDE along with DockerHub and Heroku for deployment.
+This project is implementes using Python 3.10, Flask 1.1.12, Jupyter Notebook and Spyder IDE along with DockerHub and Heroku for deployment.
 
-## [Approach](https://github.com/shriadke/Text-Similarity/blob/main/docs/APPROACH.md)
+## [Approach](https://github.com/shriadke/FetchSearch/blob/main/docs/APPROACH.md)
 
-Here I have considered 3 different basic text similarity approaches that are easy to implement without the use of external libraries such as Scikit-Learn, NLTK, Gensim, Spacy, etc. These approaches consider individual texts as a list of tokenized words and performs mathematical similarity operations. The details of all of these can be found in [Approach](https://github.com/shriadke/Text-Similarity/blob/main/docs/APPROACH.md). Follwing are the steps involved in this project:
+Here I have considered 3 different basic text similarity approaches that are easy to implement without the use of external libraries such as Scikit-Learn, NLTK, Gensim, Spacy, etc. These approaches consider individual texts as a list of tokenized words and performs mathematical similarity operations. The details of all of these can be found in [Approach](https://github.com/shriadke/FetchSearch/blob/main/docs/APPROACH.md). Follwing are the steps involved in this project:
 
 1. Data Cleaning
 	
@@ -74,18 +75,33 @@ Here I have considered 3 different basic text similarity approaches that are eas
 
 	I used Lists and Dictionaries to store the data and prepare the vocabulary. The result is in the form of Similarity matrix which is a list of lists.
 
+
+### If a user searches for a category (ex. diapers) the tool should return a list of offers that are relevant to that category.
+
+
+### If a user searches for a brand (ex. Huggies) the tool should return a list of offers that are relevant to that brand.
+
+
+### If a user searches for a retailer (ex. Target) the tool should return a list of offers that are relevant to that retailer.
+
+
+### The tool should also return the score that was used to measure the similarity of the text input with each offer
+
+### Detailed responses to each problem, with a focus on the production pipeline surrounding the model.
+
+### Identifies several useful techniques to approach eReceipt classification and entity extraction.
 	
 ## Usage
 
-Clone this repo using `git clone  https://github.com/shriadke/Text-Similarity`.
+Clone this repo using `git clone  https://github.com/shriadke/FetchSearch`.
 
-As described in [File Structure](https://github.com/shriadke/Text-Similarity#file-structure), you can verify the files.
+As described in [File Structure](https://github.com/shriadke/FetchSearch#file-structure), you can verify the files.
 
 This repo can be used in multiple ways such as command line, Jupyter Notebooks, python IDEs, flask app on local, Run app on Docker, hosting on web site. The simplest of which to validate is the use of online web page.
 
-The Text Similarity App is deployed on Heroku which can be tested directly by visiting https://textsimilarityapp.herokuapp.com/. *Have some fun with it, because I did :wink:!!*
+The Text Similarity App is deployed on Heroku which can be tested directly by visiting https://fetchsearchapp.herokuapp.com/. *Have some fun with it, because I did :wink:!!*
 
-More details of other excecution methods can be found in [Usage.md](https://github.com/shriadke/Text-Similarity/blob/main/docs/Usage.md)
+More details of other excecution methods can be found in [Usage.md](https://github.com/shriadke/FetchSearch/blob/main/docs/Usage.md)
 
 ## Results and Discussion
 
