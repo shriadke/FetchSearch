@@ -1,0 +1,20 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "offer_ext": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "search_query": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "score": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}
