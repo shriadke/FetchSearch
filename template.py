@@ -14,7 +14,6 @@ file_lists = [
     f"src/{project_name}/components/__init__.py",
     f"src/{project_name}/utils/__init__.py",  
     f"src/{project_name}/utils/common.py",
-    f"src/{project_name}/research/__init__.py",
     f"src/{project_name}/logging/__init__.py",
     f"src/{project_name}/config/__init__.py",
     f"src/{project_name}/config/configuration.py",
@@ -27,6 +26,7 @@ file_lists = [
     "Dockerfile",
     "requirements.txt",
     "setup.py",
+    "research/__init__.py"
 ]
 
 for fp in file_lists:
