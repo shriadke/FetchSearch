@@ -1,1 +1,113 @@
 [2023-10-08 02:42:21,733: INFO: main: This is a custom logger for the project.]
+[2023-10-09 08:12:18,182: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 08:12:18,188: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 08:16:20,474: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 08:16:20,484: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 08:16:20,486: INFO: common: created directory at: artifacts]
+[2023-10-09 08:16:20,488: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-09 08:16:48,495: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 08:16:48,497: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 08:16:48,499: INFO: common: created directory at: artifacts]
+[2023-10-09 08:16:48,500: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-09 08:16:49,084: INFO: 1434958058: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 235962
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f116f8d895f14f1d6832a1e8f803faa6959f31c4a4b90ae9bcd2c78194b1a262"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 54EA:718D:402F6:4ACE5:6523EF2F
+Accept-Ranges: bytes
+Date: Mon, 09 Oct 2023 12:16:50 GMT
+Via: 1.1 varnish
+X-Served-By: cache-atl18455-ATL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1696853811.678551,VS0,VE135
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 5555a64ddbe92df8f27c848e52b3a6ad7c344979
+Expires: Mon, 09 Oct 2023 12:21:50 GMT
+Source-Age: 0
+
+]
+[2023-10-09 08:32:57,733: INFO: main: This Project uses custom logger.]
+[2023-10-09 08:32:57,973: INFO: main: ######## Satge Data Ingestion Stage started. ########]
+[2023-10-09 08:32:57,975: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 08:32:57,976: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 08:32:57,976: INFO: common: created directory at: artifacts]
+[2023-10-09 08:32:57,979: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-09 08:32:58,517: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 235962
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f116f8d895f14f1d6832a1e8f803faa6959f31c4a4b90ae9bcd2c78194b1a262"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 54EA:718D:402F6:4ACE5:6523EF2F
+Accept-Ranges: bytes
+Date: Mon, 09 Oct 2023 12:33:00 GMT
+Via: 1.1 varnish
+X-Served-By: cache-atl18435-ATL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1696854780.189847,VS0,VE70
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 2b62ebbcfee3c7a90a6d3b8d817780ebf23dbdc5
+Expires: Mon, 09 Oct 2023 12:38:00 GMT
+Source-Age: 0
+
+]
+[2023-10-09 08:32:58,554: INFO: main: ######## Satge Data Ingestion Stage completed. ########
+
+################################################]
+[2023-10-09 08:34:06,406: INFO: main: This Project uses custom logger.
+]
+[2023-10-09 08:34:06,406: INFO: main: #################################
+]
+[2023-10-09 08:34:06,602: INFO: main: ######## Satge Data Ingestion Stage started. ########]
+[2023-10-09 08:34:06,603: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 08:34:06,604: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 08:34:06,604: INFO: common: created directory at: artifacts]
+[2023-10-09 08:34:06,605: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-09 08:34:07,051: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 235962
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f116f8d895f14f1d6832a1e8f803faa6959f31c4a4b90ae9bcd2c78194b1a262"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 54EA:718D:402F6:4ACE5:6523EF2F
+Accept-Ranges: bytes
+Date: Mon, 09 Oct 2023 12:34:08 GMT
+Via: 1.1 varnish
+X-Served-By: cache-atl18492-ATL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1696854849.789191,VS0,VE2
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: f1fabbb2a58deb878b58e98678951d120c17764a
+Expires: Mon, 09 Oct 2023 12:39:08 GMT
+Source-Age: 69
+
+]
+[2023-10-09 08:34:07,083: INFO: main: ######## Satge Data Ingestion Stage completed. ########
+
+################################################]
