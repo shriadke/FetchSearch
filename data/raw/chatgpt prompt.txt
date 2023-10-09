@@ -1,0 +1,65 @@
+Act as an industry expert Data annotator working for an e-commerce platform that shows users available offers on their platform based on user search query. Your task is to generate user search query samples for the given offer text and output a dataset of sentence pairs in the format <search_query, offer, relevance_score>. The relevance_score is a score between 0 and 100 that you will have to assign to each pair based on the semantic similarity of the pair.
+
+I will provide an example of task in hand and by learning from that, you will have to generate the further dataset. The input file will contain offer, brand and retailer. There will be a separate list of brands and categories as well. You have to understand relations between brands, categories, retailers, and the offers to generater the search_query terms.
+
+Example:
+input: 
+{
+"all_brands" : ["Back to the Roots", "Huggies", "Brita", "Sams clubs"],
+"all_categories" : ["Food & Beverages", "Baby products", "Home decor"],
+"offers" : [
+{ 
+"offer": "Back to the Roots, select varieties, at Walmart",
+"brand": "Back to the Roots",
+"retailer": "Walmart"
+}
+]
+}
+
+output: 
+{
+	"pairs" : [
+				{"search_query" : "walmart",
+				 "offer" : "Back to the Roots, select varieties, at Walmart",
+				 "relevance_score" : 100},
+				 {"search_query" : "Back to the roots",
+				 "offer" : "Back to the Roots, select varieties, at Walmart",
+				 "relevance_score" : 100},
+				 {"search_query" : "variety",
+				 "offer" : "Back to the Roots, select varieties, at Walmart",
+				 "relevance_score" : 100},
+				 {"search_query" : "gardening",
+				 "offer" : "Back to the Roots, select varieties, at Walmart",
+				 "relevance_score" : 75},
+				 {"search_query" : "health",
+				 "offer" : "Back to the Roots, select varieties, at Walmart",
+				 "relevance_score" : 0},
+			]
+}
+
+Now, learning from above example, please output the necessary dataset. The input is as below:
+
+input: 
+{
+"all_brands" : ["MAD BEAN CO", "SOUTH SHORE BREWERY", "SIMILAC", "RED WOLF", "BOULEVARD", "SMIRNOFF ICE SMASH", "CHEETOS", "BAYERN SEASONAL", "DUST BOWL BREWING CO", "MIRABELLO", "SANTIAGO QUEIROLO", "MCKENZIE BREWING SEASONAL", "LAKE LOUIE BREWING", "CAMPO BRAVO", "CAULIPOWER LIVE LIFE ON THE VEG", "RED BRICK VARIETY PACK", "LEOPOLD BROS", "405 BREWING CO", "POLAR FROST", "CHATEAU LANDAT", "SANTA SILVANA IN VILLA", "REPUBLIC SPIRIT BLENDS", "DALMORE", "WOODSTOCK INN VARIETY PACK", "FRIEND AND FARMER", "MAD BEAN VANILLA ICED COFFEE", "BRYANTS", "JOLIE FOLLE", "MORTLACH", "UPSLOPE SPIKED SNOWMELT CRAFT HARD SELTZER V", "MINGLEWOOD", "BEACH DAY EVERY DAY", "THREE WEAV3RS", "PRO FORCE MEMBERS MARK", "JACK DANIELS", "WACONIA BREWING COMPANY", "JUMEX", "CIELO", "CRAZY ELK", "MIO", "GREAT LAKES COMMODORE PERRY", "MINUTE RICE", "BACIO DELLA LUNA", "DEZZANI", "DUCK FOOT", "LIVE FOR TOMORROW", "CORDERO CON PIEL LOBO", "KING ESTATE", "ARIZONA", "FAT HEADS BREWERY", "RUM CHATA", "MINNESOTA NICE", "CONNIES", "LIL SELTZ", "Snack Factory", "NO LI BREWHOUSE", "STONE BROOK WINERY", "PBC", "GREATER GOOD", "SARDON", "TAFTS BREWING CO", "SOUTHERN TIER HI CURRENT CRAFT HARD SELTZER", "HAP AND HARRYS", "PEPPERIDGE FARM", "LEAN CUISINE", "CONAIR", "MATTHEW FOX VINEYARDS", "SCREAMIN SICILIAN", "FRAMINGHAM", "PFRIEM", "WILDCRAFT CIDER WORKS", "THREE FINGERS HIGH", "AX", "BRONX BREWERY", "WRINKLED", "REBEL YELL", "DIAL", "BOSS DOG", "MEZCAL BUENBICHO", "PINALEN", "CRACKER JACK", "OCEAN", "RUSH RIVER", "VEUVE DU VERNAY", "NEYAH", "MIDNIGHT BREWERY", "OREO OS", "MODELO CHELADA", "CHATEAU PALENE", "ECO BY NATY", "FEVER-TREE", "SILVER GHOST", "GATE CITY BREWING CO", "CHUPAHOPRA", "FOOTHILLS BREWING", "FIELD DAY", "MICHELOB DRY", "TRUTH BE TOLD", "LOREAL PARIS COSMETICS", "HOPPIN FROG", "YEE HAW BREWING CO", "NUE"]
+
+"all_categories":["Red Pasta Sauce", "Alfredo & White Pasta Sauce", "Cooking & Baking", "Packaged Seafood", "Feminine Hygeine", "Leafy Salads", "Cream", "Coffee", "Frozen Fruits", "Nut Butters & Jam", "Frozen Desserts", "Decor", "Candy", "Cereal, Granola, & Toaster Pastries", "Frozen Sides", "Dairy Alternatives", "Meal Replacement Beverages", "Pretzels", "Snack Mixes", "Frozen Meals", "Frozen", "Dairy", "Baby Bathing", "Condiments", "Packaged Meals & Sides", "Dips & Salsa", "Crackers", "Potty Training", "Household Cleaning Supplies", "Beer", "Soup & Broth", "Vegetable Juices", "Baby Safety", "Toothpaste", "Rum", "Sexual Health", "Malt Beverages", "Diapering", "Dessert Toppings", "Hard Seltzers, Sodas, Waters, Lemonades & Teas", "Hard Ciders", "Yogurt", "Household Supplies", "Dry Pasta", "Popcorn", "Drink Mixes", "Puffed Snacks", "Jerky & Dried Meat", "Deli Counter", "Milk", "Wine", "Bread", "Tea", "Sauces & Marinades", "Pest Control", "Energy Drinks", "Chips", "Nuts & Seeds", "Cookies", "Foot Care", "Vodka", "Deodorant & Antiperspirant", "Food Storage", "Cheese", "Frozen Vegetables", "Trail Mix", "Packaged Fruit & Applesauce", "Skin Care", "Ice", "Oral Care", "Butter & Margarine", "Water", "Plant-Based Meat", "Eggs", "Fresh Pasta", "Fruit & Vegetable Snacks", "Frozen Breads & Doughs", "Bakery", "Cosmetic Tools", "Laundry Supplies", "Frozen Pizza & Pizza Snacks", "Tobacco Products", "Spirits", "Frozen Breakfast", "Dog Supplies", "Pickled Goods", "Prepared Meals", "Eye Care", "Dressings", "First Aid", "Packaged Meat", "Hair Care", "Makeup", "Pesto Sauce", "Sports Drinks", "Hair Removal", "Pasta & Noodles", "Fruit Juices", "Nail Care", "Packaged Vegetables", "Body Fragrances", "Baby Health", "Adult Incontinence", "Snack Cakes", "Bath & Body", "Frozen Plant-Based Meat", "Refrigerated Doughs", "Rice & Grains", "Carbonated Soft Drinks", "Pudding & Gelatin", "Medicines & Treatments", "Frozen Appetizers", "Mature", "Frozen Turkey", "Frozen Chicken", "Frozen Beef", "Frozen Seafood", "Gum"]
+
+"offers":
+{
+Spend $50 on a Full-Priced new Club Membership,SAMS CLUB,SAMS CLUB
+"Beyond Meat® Plant-Based products, spend $25",,BEYOND MEAT
+Good Humor Viennetta Frozen Vanilla Cake,,GOOD HUMOR
+"Butterball, select varieties, spend $10 at Dillons Food Store",DILLONS FOOD STORE,BUTTERBALL
+"GATORADE® Fast Twitch®, 12-ounce 12 pack, at Amazon Storefront*",AMAZON,GATORADE
+Emmy's Organics® Cookies OR Brownie Snaps,,EMMYS POP UP
+"Dr Pepper®, Regular OR Zero Sugar Strawberries and Cream 12 pack, at select retailers",UNITED SUPERMARKETS,DR PEPPER
+"Arnold, Brownberry, Oroweat® Small Slice bread, at Walmart",WALMART,ARNOLD BROWNBERRY OROWEAT
+Barilla® Pesto Sauce,,BARILLA
+"Any General Mills™ products, buy 2
+Good Rewards Members Only",,ANNIES HOMEGROWN GROCERY
+Egglife Egg White Wraps at Aldi,ALDI,EGGLIFE
+Spend $20 at Zaxby's,ZAXBYS,ZAXBYS
+Spend $10 at Subway,SUBWAY,SUBWAY
+}
+
