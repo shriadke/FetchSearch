@@ -11,3 +11,7 @@ data_validation:
   STATUS_FILE: artifacts/data_validation/status.txt
   ALL_REQUIRED_FILES: ["train", "test", "val"]
 
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_ingestion/synthetic_search_data
+  tokenizer_name: shriadke/fetch-search-msmarco-distilbert-base-v4

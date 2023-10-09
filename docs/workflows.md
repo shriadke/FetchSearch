@@ -8,7 +8,7 @@
 
 4.Update the configuration manager in src config
 
-5.update the conponents
+5.update the components
 
 6.update the pipeline
 

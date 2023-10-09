@@ -4,7 +4,7 @@ logger.info("#################################\n")
 
 from fetchSearch.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from fetchSearch.pipeline.stage_02_data_validation import DataValidationTrainingPipeline
-
+from fetchSearch.pipeline.stage_03_data_transformation import DataTransformationTrainingPipeline
 
 STAGE_NAME = "Data Ingestion Stage"
 try:
@@ -25,3 +25,15 @@ try:
 except Exception as e:
     logger.exception(e)
     raise e
+
+STAGE_NAME = "Data Transformation Stage"
+try:
+    logger.info(f"######## Satge {STAGE_NAME} started. ########")
+    data_transformation = DataTransformationTrainingPipeline()
+    data_transformation.main()
+    logger.info(f"######## Satge {STAGE_NAME} completed. ########\n\n################################################")
+except Exception as e:
+    logger.exception(e)
+    raise e
+
+    
