@@ -1,13 +1,15 @@
-FROM python:3.7.9
+FROM python:3.10
 
 # Set the working directory to /app
-WORKDIR /opt/app
 
-RUN apt-get update && apt-get clean
+RUN apt update -y && apt install awscli -y
+WORKDIR /app
 
-COPY ./ .
+COPY . /app
 
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
+RUN pip install --upgrade accelerate
+RUN pip uninstall -y transformers accelerate
+RUN pip install transformers accelerate
 
-EXPOSE 5000
-ENTRYPOINT ["python3", "app.py"]
+CMD ["python3", "app.py"]
