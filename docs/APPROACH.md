@@ -58,8 +58,8 @@ This type of problem falls under the category of ["Asymmetric Semantic Search"](
             <summary>
                 Sample Prompt
             </summary>
-            <p>
-                    
+            
+            ```                   
                 Act as an industry expert Data annotator working for an e-commerce platform that shows users available offers on their platform based on user search query. Your task is to generate user search query samples for the given offer text and output a dataset of sentence pairs in the format <search_query, offer, relevance_score>. The relevance_score is a score between 0 and 100 that you will have to assign to each pair based on the semantic similarity of the pair.
 
                 I will provide an example of task in hand and by learning from that, you will have to generate the further dataset. The input file will contain offer, brand and retailer. There will be a separate list of brands and categories as well. You have to understand relations between brands, categories, retailers, and the offers to generater the search_query terms.
@@ -106,18 +106,15 @@ This type of problem falls under the category of ["Asymmetric Semantic Search"](
                         "Beyond Meat® Plant-Based products, spend $25",,BEYOND MEAT
                         Good Humor Viennetta Frozen Vanilla Cake,,GOOD HUMOR
                         "Butterball, select varieties, spend $10 at Dillons Food Store",DILLONS FOOD STORE,BUTTERBALL
-                    }
-                                
-            </p>
+                    }                                
+            ```
+
             </details>      
                 
 
-            <details>
-            <summary>
-                With that prompt, I got following response with relevant search queries:        
-            </summary>
-            <p>
-
+            <details><summary>With that prompt, I got following response with relevant search queries:</summary>
+            
+            ```
                 Certainly, here are 20 examples of user search queries generated for the given offers, along with approximate relevance scores:
 
                 Offer: "Spend $50 on a Full-Priced new Club Membership"
@@ -201,8 +198,8 @@ This type of problem falls under the category of ["Asymmetric Semantic Search"](
                 Search Query: "Macy's clothing BOGO"
                 Relevance Score: 90 (Assuming high relevance as the search query includes the retailer and offer details)
                 These relevance scores are approximate and can vary based on user behavior and preferences. Actual relevance scores would ideally be determined through user feedback and analysis.
+            ```
 
-            </p>
             </details>
 
             The results shown above contains a lot of wrong data, but this is just to demonstrate this strategy as the example I gave was a single-shot learning, it can be improved by providing more relevant examples.
@@ -210,19 +207,28 @@ This type of problem falls under the category of ["Asymmetric Semantic Search"](
     3. ***relevance_score*** : This is the groundtruth label which will be used to train our model. With the current architecture, cosine-similarity will be used and hence the score needs to be mapped from `0 to 100` into `0 to 1`. 
 
     I used a combination of this simple approach to produced ~12k synthetic data rows with multiple queries. These are then split into Train, Val and Test dataset to produce following distributions.
+    
+    <details><summary>Data Distribution (click to expand)</summary>
+    <img src="all_data_dist.png" alt="All Synthetic Data" width="350"/>
+    <img src="train_data_dist.png" alt="Search with retailer name" width="350"/>
 
-            <img src="docs/all_data_dist.png" alt="Search with category name" width="500"/>
-            <img src="docs/train_data_dist.png" alt="Search with retailer name" width="500"/>
+    <img src="val_data_dist.png" alt="Search with brand name" width="350"/>
+    <img src="test_data_dist.png" alt="Search with brand name" width="350"/></details>
+    
+    The details of this data generation can be found in the [EDA notebook](https://github.com/shriadke/FetchSearch/blob/master/research/00_00_EDA.ipynb). The data can be found at huggingface hub: [`shriadke/FetchSearch`](https://huggingface.co/datasets/shriadke/FetchSearch)
 
-            <img src="docs/val_data_dist.png" alt="Search with brand name" width="500"/>
-            <img src="docs/test_data_dist.png" alt="Search with brand name" width="500"/>
+3. **Model Training**: To train the SBERT model using above data, standard transformers-training procedure is implemented in [Model Research notebook](https://github.com/shriadke/FetchSearch/blob/master/research/00_01_model_research.ipynb). The base model used for Bi-encoder is `msmarco-distilbert-base-v4` with special tokens listed above. The notebook demonstrates trainng on a small set of test data, but it can be changed in the future.
 
-3. **Model Training**: 
-     
+The trained model was saved and pushed to huggingface hub under [`shriadke/fetch-search-msmarco-distilbert-base-v4`](https://huggingface.co/shriadke/fetch-search-msmarco-distilbert-base-v4).
+
+4. **Cross-encoder for re-ranking and filtering**: My approach considers cross encoder for 2 types of post-processing steps on `top_k` results generated by Bi-encoder model:
+     1. *Filtering Duplicate Offers*: After obtaining 10 or 20 top offers, a cross encoder is used to verify the uniqueness between the offers and if they are almost same, one of them will be dropped. This helps keeping results clean.
+    
+     2. *Re-Ranking Offers*: After filtering, remaining offers will be re-ranked with the query string to find most relevant offers at the top.
+
+    I have not trained a separate cross-encoder, but it can be done with the appropriate training data.
 
 
+## Generating Embeddings for given set of offers
 
-
-## Popularity
-
-TBC
+Refer [Generate Embedding notebook](https://github.com/shriadke/FetchSearch/blob/master/research/00_01_generate_embeddings.ipynb) to generate the embeddings of the given offers data. This file will combine the 3 input data files and create a processed offer text in the format discussed above. Those embeddings can be then processed by trained Bi-encoder model (for simplicity, I've used the pre-trained msmacro model). Further, these [embeddings](https://github.com/shriadke/FetchSearch/blob/master/data/processed/embeddings/msmacro_sent_embeddings.pkl) are stored to use while predicting the offers through the API. These can be changed by changing config path.
