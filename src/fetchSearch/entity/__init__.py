@@ -36,3 +36,4 @@ class ModelEvaluationConfig:
     model_path: Path
     tokenizer_path: Path
     metric_file_name: Path
+    synthetic_df:Path

@@ -15,7 +15,7 @@ class ModelEvaluation:
         self.config = config
       
     def calculate_cosine_scores(self, evaluator):
-        model = CrossEncoder(self.config.model_path)
+        model = CrossEncoder(self.config.tokenizer_path)
         cross_scores = model.predict([[ doc, query] for query, doc in zip(evaluator.sentences1, evaluator.sentences2)])
         # normalize to 0 to 1
         rescaled_array = (cross_scores-np.min(cross_scores))/(np.max(cross_scores)-np.min(cross_scores))
