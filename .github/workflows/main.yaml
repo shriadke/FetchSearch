@@ -6,6 +6,8 @@ on:
       - master
     paths-ignore:
       - 'README.md'
+      - 'docs/USAGE.md'
+      - 'docs/APPROACH.md'
 
 permissions:
   id-token: write

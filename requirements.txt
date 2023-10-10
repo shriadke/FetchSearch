@@ -9,6 +9,7 @@ scikit-learn==1.3.1
 torch==2.1.0
 transformers==4.34.0
 sentence_transformers
+transformers[sentencepiece]
 datasets
 tqdm
 notebook
@@ -16,8 +17,11 @@ boto3
 matplotlib
 mypy-boto3-s3
 python-box==6.0.2
+PyYAML
+sacrebleu
 ensure==1.0.2
 fastapi==0.78.0
 uvicorn==0.18.3
 Jinja2==3.1.2
+py7zr
 -e .
