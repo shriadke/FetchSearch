@@ -23,7 +23,7 @@ model_trainer:
 model_evaluation:
   root_dir: artifacts/model_evaluation
   data_path: artifacts/data_transformation/
-  model_path: artifacts/model_trainer/saved-search-model
+  model_path: msmarco-distilbert-base-v4 #artifacts/model_trainer/saved-search-model
   tokenizer_path: cross-encoder/ms-marco-MiniLM-L-6-v2
   metric_file_name: artifacts/model_evaluation/metrics.csv
   synthetic_df: data/processed/embeddings/msmacro_sent_embeddings.pkl
