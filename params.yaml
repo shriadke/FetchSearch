@@ -1,1 +1,5 @@
-key: value
+TrainingArguments:
+  special_tokens : ["[OFF] ", " [RN] ", " [CN] ", " [PCN] "]
+  num_train_epochs : 1
+  warmup_steps : 10
+  weight_decay : 0.01

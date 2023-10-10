@@ -18,6 +18,8 @@ class DataTransformation:
 
         for i in range(n_examples):
             example = data[i]
+            if split in ["val", "test"] and i > 3:
+                break
             examples.append(InputExample(texts=[example['offer_ext'], example['search_query']], label=float(example["score"])))
         logger.info(f"in {split}, We have a {type(examples)} of length {len(examples)} containing {type(examples[0])}'s.")
         dataloader = DataLoader(examples, shuffle=True, batch_size=16)
@@ -30,7 +32,6 @@ class DataTransformation:
         train_examples, train_dataloader = self.get_dataloader(dataset, "train")
         torch.save(train_dataloader, os.path.join(self.config.root_dir,"train.pth"))
 
-        
         val_examples, val_dataloader = self.get_dataloader(dataset, "val")
         val_evaluator = evaluation.EmbeddingSimilarityEvaluator([],[],[]).from_input_examples(examples=val_examples)
         torch.save(val_dataloader, os.path.join(self.config.root_dir,"val.pth"))

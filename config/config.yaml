@@ -14,4 +14,9 @@ data_validation:
 data_transformation:
   root_dir: artifacts/data_transformation
   data_path: artifacts/data_ingestion/synthetic_search_data
-  tokenizer_name: shriadke/fetch-search-msmarco-distilbert-base-v4
+
+model_trainer:
+  root_dir: artifacts/model_trainer
+  data_path: artifacts/data_transformation
+  model_ckpt: msmarco-distilbert-base-v4
+ 

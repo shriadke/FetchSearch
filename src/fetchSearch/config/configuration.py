@@ -1,7 +1,7 @@
 from pathlib import Path
 from fetchSearch.constants import *
 from fetchSearch.utils.common import read_yaml, create_directories
-from fetchSearch.entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig
+from fetchSearch.entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig, ModelTrainerConfig
 
 class ConfigurationManager:
     def __init__(
@@ -54,3 +54,21 @@ class ConfigurationManager:
         )
 
         return data_transformation_config
+
+    def get_model_trainer_config(self) -> ModelTrainerConfig:
+        config = self.config.model_trainer
+        params = self.params.TrainingArguments
+
+        create_directories([config.root_dir])
+
+        model_trainer_config = ModelTrainerConfig(
+            root_dir=config.root_dir,
+            data_path=config.data_path,
+            model_ckpt = config.model_ckpt,
+            special_tokens = params.special_tokens,
+            num_train_epochs = params.num_train_epochs,
+            warmup_steps = params.warmup_steps,
+            weight_decay = params.weight_decay           
+        )
+
+        return model_trainer_config

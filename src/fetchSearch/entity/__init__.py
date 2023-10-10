@@ -18,3 +18,13 @@ class DataValidationConfig():
 class DataTransformationConfig():
     root_dir: Path
     data_path: Path
+
+@dataclass(frozen=True)
+class ModelTrainerConfig:
+    root_dir: Path
+    data_path: Path
+    model_ckpt: Path
+    num_train_epochs: int
+    warmup_steps: int
+    weight_decay: float
+    special_tokens: list
