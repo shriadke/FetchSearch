@@ -9,10 +9,9 @@ This app is focused on the semantic similarity between search texts. The objecti
 
 Here are some demo screenshots for the app and you can also try it using [this link](https://fetchsearch-shriadke.streamlit.app/)
 
-![Search with brand name](https://github.com/shriadke/FetchSearch/blob/master/docs/search_gatrd.png)
-![Search with category name](https://github.com/shriadke/FetchSearch/blob/master/docs/search_alcohol.png)
-![Search with retailer name](https://github.com/shriadke/FetchSearch/blob/master/docs/search_target.png)
-
+<img src="docs/search_alcohol.png" alt="Search with category name" width="500"/>
+<img src="docs/search_target.png" alt="Search with retailer name" width="500"/>
+<img src="docs/search_gatrd.png" alt="Search with brand name" width="500"/>
 
 ## Environment
 
@@ -20,42 +19,42 @@ This project is implemented using `Python 3.10`, [`Sentence Transformers`](https
 
 ## Approach
 
-###### For detailed approach please read [docs/APPROACH.md](https://github.com/shriadke/FetchSearch/blob/main/docs/APPROACH.md)
+###### For detailed approach please read [docs/APPROACH.md](https://github.com/shriadke/FetchSearch/blob/master/docs/APPROACH.md)
 
 This type of problem falls under the category of ["Asymmetric Semantic Search"](https://www.sbert.net/examples/applications/semantic-search/README.html#semantic-search) , which in simpler words, takes in a shorter search query and outputs a longer paragraph relevant to the query from a given set of documents. For us, these documents are nothing but the offers needed to be displayed based on user's search query.
 
 I've considered [Retrieve and Re-rank](https://www.sbert.net/examples/applications/retrieve_rerank/README.html) apprach along with removing semantic duplications to improve search results. Currently, the deployed app uses `sentence_transformers` library's pre-trained models for both Bi-encoder and Cross-encoder.
 
-Once again, more details on data pre-processing, embedding generation and possible ways to do so, are detailed [here](https://github.com/shriadke/FetchSearch/blob/main/docs/APPROACH.md).
+Once again, more details on data pre-processing, embedding generation and possible ways to do so, are detailed [here](https://github.com/shriadke/FetchSearch/blob/master/docs/APPROACH.md).
 
 
 ## File Structure
 The folder structure is taken from an open-source project repository and I've been using the same throughtout my professional career for various end-to-end projects. It follows standard best practices to software engineering and MLOps along with the pipeline that can be reused with various cloud platforms. Following arethe generic files and sample description: 
 
-1. [app.py](https://github.com/shriadke/FetchSearch/blob/main/app.py)
+1. [app.py](https://github.com/shriadke/FetchSearch/blob/master/app.py)
 	This is the main app file used to build the `streamlit` app implementation of FetchSearch app that uses `predict(text)` method to obtain the list of offers.
 
-2. [app_fast_api.py](https://github.com/shriadke/FetchSearch/blob/main/app_fast_api.py)
+2. [app_fast_api.py](https://github.com/shriadke/FetchSearch/blob/master/app_fast_api.py)
 	This is the another implementation of FetchSearch API built with the `FastAPI` package. This contains 2 main APIs:
 	- `/train`: To run the training pipeline using UI provided by FastAPI.
 	- `/predict`: To get the list of offers using the model trained above (This will need to reset the prediction params manually to newly trained model).
 
-3. [main.py](https://github.com/shriadke/FetchSearch/blob/main/main.py)
-	This is the Python module that encapsulates all the different methods performed in this pipeline. This module is further used by the API service in the above [app_fast_api.py](https://github.com/shriadke/FetchSearch/blob/main/app_fast_api.py) to orchestrate different stages in deployment. 
+3. [main.py](https://github.com/shriadke/FetchSearch/blob/master/main.py)
+	This is the Python module that encapsulates all the different methods performed in this pipeline. This module is further used by the API service in the above [app_fast_api.py](https://github.com/shriadke/FetchSearch/blob/master/app_fast_api.py) to orchestrate different stages in deployment. 
 
-4. [src/fetchSearch](https://github.com/shriadke/FetchSearch/blob/main/src/fetchSearch/)
-	This is the main project module with all the components, configs, pipelines and other supporting code. This will be generated as source package after [`setup.py`](https://github.com/shriadke/FetchSearch/blob/main/setup.py) is executed.
+4. [src/fetchSearch](https://github.com/shriadke/FetchSearch/blob/master/src/fetchSearch/)
+	This is the main project module with all the components, configs, pipelines and other supporting code. This will be generated as source package after [`setup.py`](https://github.com/shriadke/FetchSearch/blob/master/setup.py) is executed.
 
-5. [requirements.txt](https://github.com/shriadke/FetchSearch/blob/main/requirements.txt)
+5. [requirements.txt](https://github.com/shriadke/FetchSearch/blob/master/requirements.txt)
 	This file contains the necessary packages required for this project.
 
-6. [Dockerfile](https://github.com/shriadke/FetchSearch/blob/main/Dockerfile)
+6. [Dockerfile](https://github.com/shriadke/FetchSearch/blob/master/Dockerfile)
 	This file contains build instructions for API deployment using Docker.
 
-7. [data/](https://github.com/shriadke/FetchSearch/blob/main/data/)
+7. [data/](https://github.com/shriadke/FetchSearch/blob/master/data/)
 	This folder contains all raw and processed data along with embeddings.
 
-8. [research/](https://github.com/shriadke/FetchSearch/blob/main/research/)
+8. [research/](https://github.com/shriadke/FetchSearch/blob/master/research/)
 	This folder contains all the research steps performed before incorporating the code into src.
 	
 
@@ -81,7 +80,7 @@ The Search App will be deployed on your chosen platform.
 
 ### *Have some fun with it, because I did :wink:!!*
 
-More details on excecution methods for training/deployment can be found in [Usage.md](https://github.com/shriadke/FetchSearch/blob/main/docs/Usage.md)
+More details on excecution methods for training/deployment can be found in [Usage.md](https://github.com/shriadke/FetchSearch/blob/master/docs/Usage.md)
 
 ### Future Work
 

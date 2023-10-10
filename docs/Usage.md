@@ -1,6 +1,8 @@
 # Using the Text Similarity module
 
-1. Jupyter Notebook
+#### TBC
+
+<!-- 1. Jupyter Notebook
 
 	- [textSimilarity.ipynb](https://github.com/shriadke/Text-Similarity/blob/main/textSimilarity.ipynb) can be used to develop and test the project line-by-line.
 	
@@ -33,4 +35,4 @@
 5. Heroku App
 
 	- This app is deployed on Heroku platform by connecting this github repo.
-	- Visit https://textsimilarityapp.herokuapp.com/ to have fun with this app implementation.
+	- Visit https://textsimilarityapp.herokuapp.com/ to have fun with this app implementation. -->
