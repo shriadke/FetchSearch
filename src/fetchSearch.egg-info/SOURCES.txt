@@ -9,8 +9,8 @@ src/fetchSearch/components/__init__.py
 src/fetchSearch/config/__init__.py
 src/fetchSearch/config/configuration.py
 src/fetchSearch/constants/__init__.py
+src/fetchSearch/entity/__init__.py
 src/fetchSearch/logging/__init__.py
 src/fetchSearch/pipeline/__init__.py
-src/fetchSearch/research/__init__.py
 src/fetchSearch/utils/__init__.py
 src/fetchSearch/utils/common.py

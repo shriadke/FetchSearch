@@ -1,1 +1,763 @@
 [2023-10-08 02:42:21,733: INFO: main: This is a custom logger for the project.]
+[2023-10-09 08:12:18,182: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 08:12:18,188: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 08:16:20,474: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 08:16:20,484: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 08:16:20,486: INFO: common: created directory at: artifacts]
+[2023-10-09 08:16:20,488: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-09 08:16:48,495: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 08:16:48,497: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 08:16:48,499: INFO: common: created directory at: artifacts]
+[2023-10-09 08:16:48,500: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-09 08:16:49,084: INFO: 1434958058: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 235962
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f116f8d895f14f1d6832a1e8f803faa6959f31c4a4b90ae9bcd2c78194b1a262"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 54EA:718D:402F6:4ACE5:6523EF2F
+Accept-Ranges: bytes
+Date: Mon, 09 Oct 2023 12:16:50 GMT
+Via: 1.1 varnish
+X-Served-By: cache-atl18455-ATL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1696853811.678551,VS0,VE135
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 5555a64ddbe92df8f27c848e52b3a6ad7c344979
+Expires: Mon, 09 Oct 2023 12:21:50 GMT
+Source-Age: 0
+
+]
+[2023-10-09 08:32:57,733: INFO: main: This Project uses custom logger.]
+[2023-10-09 08:32:57,973: INFO: main: ######## Satge Data Ingestion Stage started. ########]
+[2023-10-09 08:32:57,975: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 08:32:57,976: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 08:32:57,976: INFO: common: created directory at: artifacts]
+[2023-10-09 08:32:57,979: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-09 08:32:58,517: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 235962
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f116f8d895f14f1d6832a1e8f803faa6959f31c4a4b90ae9bcd2c78194b1a262"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 54EA:718D:402F6:4ACE5:6523EF2F
+Accept-Ranges: bytes
+Date: Mon, 09 Oct 2023 12:33:00 GMT
+Via: 1.1 varnish
+X-Served-By: cache-atl18435-ATL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1696854780.189847,VS0,VE70
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 2b62ebbcfee3c7a90a6d3b8d817780ebf23dbdc5
+Expires: Mon, 09 Oct 2023 12:38:00 GMT
+Source-Age: 0
+
+]
+[2023-10-09 08:32:58,554: INFO: main: ######## Satge Data Ingestion Stage completed. ########
+
+################################################]
+[2023-10-09 08:34:06,406: INFO: main: This Project uses custom logger.
+]
+[2023-10-09 08:34:06,406: INFO: main: #################################
+]
+[2023-10-09 08:34:06,602: INFO: main: ######## Satge Data Ingestion Stage started. ########]
+[2023-10-09 08:34:06,603: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 08:34:06,604: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 08:34:06,604: INFO: common: created directory at: artifacts]
+[2023-10-09 08:34:06,605: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-09 08:34:07,051: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 235962
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f116f8d895f14f1d6832a1e8f803faa6959f31c4a4b90ae9bcd2c78194b1a262"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 54EA:718D:402F6:4ACE5:6523EF2F
+Accept-Ranges: bytes
+Date: Mon, 09 Oct 2023 12:34:08 GMT
+Via: 1.1 varnish
+X-Served-By: cache-atl18492-ATL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1696854849.789191,VS0,VE2
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: f1fabbb2a58deb878b58e98678951d120c17764a
+Expires: Mon, 09 Oct 2023 12:39:08 GMT
+Source-Age: 69
+
+]
+[2023-10-09 08:34:07,083: INFO: main: ######## Satge Data Ingestion Stage completed. ########
+
+################################################]
+[2023-10-09 08:48:06,743: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 08:48:06,746: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 08:48:06,747: INFO: common: created directory at: artifacts]
+[2023-10-09 08:48:06,748: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-09 08:48:22,614: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 08:48:22,616: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 08:48:22,618: INFO: common: created directory at: artifacts]
+[2023-10-09 08:48:22,619: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-09 08:48:47,068: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 08:48:47,070: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 08:48:47,071: INFO: common: created directory at: artifacts]
+[2023-10-09 08:48:47,073: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-09 08:58:27,766: INFO: main: This Project uses custom logger.
+]
+[2023-10-09 08:58:27,766: INFO: main: #################################
+]
+[2023-10-09 08:58:28,005: INFO: main: ######## Satge Data Ingestion Stage started. ########]
+[2023-10-09 08:58:28,005: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 08:58:28,009: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 08:58:28,011: INFO: common: created directory at: artifacts]
+[2023-10-09 08:58:28,011: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-09 08:58:28,546: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 235962
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f116f8d895f14f1d6832a1e8f803faa6959f31c4a4b90ae9bcd2c78194b1a262"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 54EA:718D:402F6:4ACE5:6523EF2F
+Accept-Ranges: bytes
+Date: Mon, 09 Oct 2023 12:58:30 GMT
+Via: 1.1 varnish
+X-Served-By: cache-atl18429-ATL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1696856310.207014,VS0,VE90
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: b80a4c98b038ccd3910edc11bb383a5ab1fae0f1
+Expires: Mon, 09 Oct 2023 13:03:30 GMT
+Source-Age: 0
+
+]
+[2023-10-09 08:58:28,586: INFO: main: ######## Satge Data Ingestion Stage completed. ########
+
+################################################]
+[2023-10-09 08:58:28,587: INFO: main: ######## Satge Data Validation Stage started. ########]
+[2023-10-09 08:58:28,589: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 08:58:28,590: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 08:58:28,591: INFO: common: created directory at: artifacts]
+[2023-10-09 08:58:28,592: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-09 08:58:28,595: INFO: main: ######## Satge Data Validation Stage completed. ########
+
+################################################]
+[2023-10-09 11:04:23,070: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 11:04:23,085: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 11:04:23,085: INFO: common: created directory at: artifacts]
+[2023-10-09 11:04:23,100: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-09 11:04:46,249: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 11:04:46,251: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 11:04:46,253: INFO: common: created directory at: artifacts]
+[2023-10-09 11:04:46,254: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-09 11:04:46,781: INFO: 448653829: We have a <class 'list'> of length 7314 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-09 11:08:30,602: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 11:08:30,604: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 11:08:30,605: INFO: common: created directory at: artifacts]
+[2023-10-09 11:08:30,606: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-09 11:08:31,139: INFO: 845611328: We have a <class 'list'> of length 7314 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-09 11:10:48,603: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 11:10:48,605: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 11:10:48,606: INFO: common: created directory at: artifacts]
+[2023-10-09 11:10:48,608: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-09 11:10:49,188: INFO: 1440099716: We have a <class 'list'> of length 7314 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-09 11:10:49,584: INFO: 1440099716: We have a <class 'list'> of length 2814 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-09 11:10:49,721: INFO: 1440099716: We have a <class 'list'> of length 1125 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-09 11:20:43,269: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 11:20:43,271: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 11:20:43,273: INFO: common: created directory at: artifacts]
+[2023-10-09 11:20:43,274: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-09 11:20:43,790: INFO: 2610238526: in train, We have a <class 'list'> of length 7314 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-09 11:20:44,099: INFO: 2610238526: in val, We have a <class 'list'> of length 2814 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-09 11:22:25,682: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-09 11:22:25,684: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 11:22:25,685: INFO: common: created directory at: artifacts]
+[2023-10-09 11:22:25,687: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-09 11:22:26,211: INFO: 2082942707: in train, We have a <class 'list'> of length 7314 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-09 11:22:26,465: INFO: 2082942707: in val, We have a <class 'list'> of length 2814 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-09 11:22:26,578: INFO: 2082942707: in test, We have a <class 'list'> of length 1125 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-10 00:32:13,231: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 00:32:13,244: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 00:32:13,249: INFO: common: created directory at: artifacts]
+[2023-10-10 00:32:13,252: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-10 00:33:20,845: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 00:33:20,848: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 00:33:20,849: INFO: common: created directory at: artifacts]
+[2023-10-10 00:33:20,852: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-10 00:34:56,211: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 00:34:56,220: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 00:34:56,222: INFO: common: created directory at: artifacts]
+[2023-10-10 00:34:56,223: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-10 00:35:17,793: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 00:35:17,796: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 00:35:17,797: INFO: common: created directory at: artifacts]
+[2023-10-10 00:35:17,800: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-10 00:35:49,450: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 00:35:49,453: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 00:35:49,454: INFO: common: created directory at: artifacts]
+[2023-10-10 00:35:49,456: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-10 00:39:11,123: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 00:39:11,126: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 00:39:11,127: INFO: common: created directory at: artifacts]
+[2023-10-10 00:39:11,129: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-10 00:39:11,130: INFO: SentenceTransformer: Load pretrained SentenceTransformer: msmarco-distilbert-base-v4]
+[2023-10-10 00:39:13,468: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 00:39:40,974: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 00:39:40,976: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 00:39:40,978: INFO: common: created directory at: artifacts]
+[2023-10-10 00:39:40,979: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-10 00:39:40,980: INFO: SentenceTransformer: Load pretrained SentenceTransformer: msmarco-distilbert-base-v4]
+[2023-10-10 00:39:41,715: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 00:44:16,138: INFO: EmbeddingSimilarityEvaluator: EmbeddingSimilarityEvaluator: Evaluating the model on  dataset after epoch 0:]
+[2023-10-10 00:45:47,338: INFO: EmbeddingSimilarityEvaluator: Cosine-Similarity :	Pearson: 0.4086	Spearman: 0.3420]
+[2023-10-10 00:45:47,338: INFO: EmbeddingSimilarityEvaluator: Manhattan-Distance:	Pearson: 0.4266	Spearman: 0.3427]
+[2023-10-10 00:45:47,338: INFO: EmbeddingSimilarityEvaluator: Euclidean-Distance:	Pearson: 0.4280	Spearman: 0.3432]
+[2023-10-10 00:45:47,338: INFO: EmbeddingSimilarityEvaluator: Dot-Product-Similarity:	Pearson: 0.0070	Spearman: -0.0047]
+[2023-10-10 00:45:47,350: INFO: SentenceTransformer: Save model to artifacts/model_trainer\saved-dearch-model]
+[2023-10-10 00:52:28,063: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 00:52:28,065: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 00:52:28,065: INFO: common: created directory at: artifacts]
+[2023-10-10 00:52:28,065: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-10 00:52:28,065: INFO: SentenceTransformer: Load pretrained SentenceTransformer: msmarco-distilbert-base-v4]
+[2023-10-10 00:52:29,417: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 00:52:41,849: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 00:52:41,852: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 00:52:41,853: INFO: common: created directory at: artifacts]
+[2023-10-10 00:52:41,853: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-10 00:52:41,853: INFO: SentenceTransformer: Load pretrained SentenceTransformer: msmarco-distilbert-base-v4]
+[2023-10-10 00:52:42,563: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 01:01:05,341: INFO: main: This Project uses custom logger.
+]
+[2023-10-10 01:01:05,357: INFO: main: #################################
+]
+[2023-10-10 01:03:01,832: INFO: main: This Project uses custom logger.
+]
+[2023-10-10 01:03:01,832: INFO: main: #################################
+]
+[2023-10-10 01:03:07,755: INFO: main: ######## Satge Data Ingestion Stage started. ########]
+[2023-10-10 01:03:07,758: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 01:03:07,760: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 01:03:07,760: INFO: common: created directory at: artifacts]
+[2023-10-10 01:03:07,761: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-10 01:03:08,433: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 235962
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f116f8d895f14f1d6832a1e8f803faa6959f31c4a4b90ae9bcd2c78194b1a262"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 8874:3BB3:31C93F:3CF449:6524DB0D
+Accept-Ranges: bytes
+Date: Tue, 10 Oct 2023 05:03:10 GMT
+Via: 1.1 varnish
+X-Served-By: cache-atl18454-ATL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1696914190.342322,VS0,VE143
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 1dbf14b894208aedd661351dc5a6494bbca0b0a6
+Expires: Tue, 10 Oct 2023 05:08:10 GMT
+Source-Age: 0
+
+]
+[2023-10-10 01:03:08,466: INFO: main: ######## Satge Data Ingestion Stage completed. ########
+
+################################################]
+[2023-10-10 01:03:08,466: INFO: main: ######## Satge Data Validation Stage started. ########]
+[2023-10-10 01:03:08,466: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 01:03:08,466: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 01:03:08,466: INFO: common: created directory at: artifacts]
+[2023-10-10 01:03:08,466: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-10 01:03:08,466: INFO: main: ######## Satge Data Validation Stage completed. ########
+
+################################################]
+[2023-10-10 01:03:08,482: INFO: main: ######## Satge Data Transformation Stage started. ########]
+[2023-10-10 01:03:08,483: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 01:03:08,483: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 01:03:08,483: INFO: common: created directory at: artifacts]
+[2023-10-10 01:03:08,483: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-10 01:03:09,136: INFO: data_transformation: in train, We have a <class 'list'> of length 7314 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-10 01:03:09,400: INFO: data_transformation: in val, We have a <class 'list'> of length 2814 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-10 01:03:09,434: INFO: data_transformation: in test, We have a <class 'list'> of length 4 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-10 01:03:09,434: INFO: main: ######## Satge Data Transformation Stage completed. ########
+
+################################################]
+[2023-10-10 01:03:09,449: INFO: main: ######## Satge Model Trainer stage started. ########]
+[2023-10-10 01:03:09,452: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 01:03:09,454: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 01:03:09,455: INFO: common: created directory at: artifacts]
+[2023-10-10 01:03:09,456: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-10 01:03:09,457: INFO: SentenceTransformer: Load pretrained SentenceTransformer: msmarco-distilbert-base-v4]
+[2023-10-10 01:03:10,522: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 01:03:12,735: INFO: EmbeddingSimilarityEvaluator: EmbeddingSimilarityEvaluator: Evaluating the model on  dataset after epoch 0:]
+[2023-10-10 01:04:27,711: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 01:04:27,718: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 01:04:27,722: INFO: common: created directory at: artifacts]
+[2023-10-10 01:04:27,725: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-10 01:04:27,727: INFO: SentenceTransformer: Load pretrained SentenceTransformer: msmarco-distilbert-base-v4]
+[2023-10-10 01:04:29,486: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 01:04:43,393: INFO: EmbeddingSimilarityEvaluator: Cosine-Similarity :	Pearson: 0.5707	Spearman: 0.5744]
+[2023-10-10 01:04:43,393: INFO: EmbeddingSimilarityEvaluator: Manhattan-Distance:	Pearson: 0.5563	Spearman: 0.5667]
+[2023-10-10 01:04:43,393: INFO: EmbeddingSimilarityEvaluator: Euclidean-Distance:	Pearson: 0.5883	Spearman: 0.5965]
+[2023-10-10 01:04:43,393: INFO: EmbeddingSimilarityEvaluator: Dot-Product-Similarity:	Pearson: 0.5604	Spearman: 0.5631]
+[2023-10-10 01:04:43,408: INFO: SentenceTransformer: Save model to artifacts/model_trainer\saved-search-model]
+[2023-10-10 01:04:43,958: INFO: main: ######## Satge Model Trainer stage completed. ########
+
+################################################]
+[2023-10-10 01:06:34,941: INFO: main: This Project uses custom logger.
+]
+[2023-10-10 01:06:34,943: INFO: main: #################################
+]
+[2023-10-10 01:06:40,446: INFO: main: ######## Stage Data Ingestion Stage started. ########]
+[2023-10-10 01:06:40,461: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 01:06:40,461: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 01:06:40,461: INFO: common: created directory at: artifacts]
+[2023-10-10 01:06:40,465: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-10 01:06:40,875: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 235962
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f116f8d895f14f1d6832a1e8f803faa6959f31c4a4b90ae9bcd2c78194b1a262"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 8874:3BB3:31C93F:3CF449:6524DB0D
+Accept-Ranges: bytes
+Date: Tue, 10 Oct 2023 05:06:42 GMT
+Via: 1.1 varnish
+X-Served-By: cache-atl18442-ATL
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1696914403.932517,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 2a4e44b926fe98021a36d01d1db2ee6507ea0b69
+Expires: Tue, 10 Oct 2023 05:11:42 GMT
+Source-Age: 213
+
+]
+[2023-10-10 01:06:40,913: INFO: main: ######## Stage Data Ingestion Stage completed. ########
+
+################################################]
+[2023-10-10 01:06:40,914: INFO: main: ######## Stage Data Validation Stage started. ########]
+[2023-10-10 01:06:40,916: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 01:06:40,921: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 01:06:40,923: INFO: common: created directory at: artifacts]
+[2023-10-10 01:06:40,923: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-10 01:06:40,926: INFO: main: ######## Stage Data Validation Stage completed. ########
+
+################################################]
+[2023-10-10 01:06:40,926: INFO: main: ######## Stage Data Transformation Stage started. ########]
+[2023-10-10 01:06:40,930: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 01:06:40,930: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 01:06:40,930: INFO: common: created directory at: artifacts]
+[2023-10-10 01:06:40,930: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-10 01:06:41,475: INFO: data_transformation: in train, We have a <class 'list'> of length 7314 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-10 01:06:41,545: INFO: data_transformation: in val, We have a <class 'list'> of length 4 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-10 01:06:41,547: INFO: data_transformation: in test, We have a <class 'list'> of length 4 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-10 01:06:41,547: INFO: main: ######## Stage Data Transformation Stage completed. ########
+
+################################################]
+[2023-10-10 01:06:41,554: INFO: main: ######## Stage Model Trainer stage started. ########]
+[2023-10-10 01:06:41,560: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 01:06:41,560: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 01:06:41,560: INFO: common: created directory at: artifacts]
+[2023-10-10 01:06:41,560: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-10 01:06:41,560: INFO: SentenceTransformer: Load pretrained SentenceTransformer: msmarco-distilbert-base-v4]
+[2023-10-10 01:06:42,596: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 01:06:44,697: INFO: EmbeddingSimilarityEvaluator: EmbeddingSimilarityEvaluator: Evaluating the model on  dataset after epoch 0:]
+[2023-10-10 01:06:44,866: INFO: EmbeddingSimilarityEvaluator: Cosine-Similarity :	Pearson: 0.8464	Spearman: 0.9487]
+[2023-10-10 01:06:44,866: INFO: EmbeddingSimilarityEvaluator: Manhattan-Distance:	Pearson: 0.8129	Spearman: 0.9487]
+[2023-10-10 01:06:44,866: INFO: EmbeddingSimilarityEvaluator: Euclidean-Distance:	Pearson: 0.8430	Spearman: 0.9487]
+[2023-10-10 01:06:44,866: INFO: EmbeddingSimilarityEvaluator: Dot-Product-Similarity:	Pearson: 0.8327	Spearman: 0.9487]
+[2023-10-10 01:06:44,866: INFO: SentenceTransformer: Save model to artifacts/model_trainer\saved-search-model]
+[2023-10-10 01:06:48,121: INFO: main: ######## Stage Model Trainer stage completed. ########
+
+################################################]
+[2023-10-10 03:32:39,348: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 03:32:39,353: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 03:32:39,362: INFO: common: created directory at: artifacts]
+[2023-10-10 03:32:39,363: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-10-10 03:32:39,363: INFO: SentenceTransformer: Load pretrained SentenceTransformer: cross-encoder/ms-marco-MiniLM-L-6-v2]
+[2023-10-10 03:32:44,564: WARNING: SentenceTransformer: No sentence-transformers model found with name C:\Users\shrin/.cache\torch\sentence_transformers\cross-encoder_ms-marco-MiniLM-L-6-v2. Creating a new one with MEAN pooling.]
+[2023-10-10 03:32:45,272: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 03:32:45,973: INFO: CrossEncoder: Use pytorch device: cpu]
+[2023-10-10 03:33:34,311: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 03:33:34,312: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 03:33:34,312: INFO: common: created directory at: artifacts]
+[2023-10-10 03:33:34,312: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-10-10 03:33:34,312: INFO: SentenceTransformer: Load pretrained SentenceTransformer: cross-encoder/ms-marco-MiniLM-L-6-v2]
+[2023-10-10 03:33:34,929: WARNING: SentenceTransformer: No sentence-transformers model found with name C:\Users\shrin/.cache\torch\sentence_transformers\cross-encoder_ms-marco-MiniLM-L-6-v2. Creating a new one with MEAN pooling.]
+[2023-10-10 03:33:35,263: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 03:33:35,740: INFO: CrossEncoder: Use pytorch device: cpu]
+[2023-10-10 03:33:51,728: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 03:33:51,728: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 03:33:51,743: INFO: common: created directory at: artifacts]
+[2023-10-10 03:33:51,743: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-10-10 03:33:51,743: INFO: SentenceTransformer: Load pretrained SentenceTransformer: cross-encoder/ms-marco-MiniLM-L-6-v2]
+[2023-10-10 03:33:52,298: WARNING: SentenceTransformer: No sentence-transformers model found with name C:\Users\shrin/.cache\torch\sentence_transformers\cross-encoder_ms-marco-MiniLM-L-6-v2. Creating a new one with MEAN pooling.]
+[2023-10-10 03:33:52,662: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 03:33:53,114: INFO: CrossEncoder: Use pytorch device: cpu]
+[2023-10-10 03:34:30,586: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 03:34:30,589: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 03:34:30,592: INFO: common: created directory at: artifacts]
+[2023-10-10 03:34:30,593: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-10-10 03:34:30,594: INFO: SentenceTransformer: Load pretrained SentenceTransformer: cross-encoder/ms-marco-MiniLM-L-6-v2]
+[2023-10-10 03:34:31,005: WARNING: SentenceTransformer: No sentence-transformers model found with name C:\Users\shrin/.cache\torch\sentence_transformers\cross-encoder_ms-marco-MiniLM-L-6-v2. Creating a new one with MEAN pooling.]
+[2023-10-10 03:34:31,321: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 03:34:31,809: INFO: CrossEncoder: Use pytorch device: cpu]
+[2023-10-10 03:34:31,886: INFO: 2933710435: Val accuracy with cross-encoders : 98.7500003632158]
+[2023-10-10 03:50:30,630: INFO: main: This Project uses custom logger.
+]
+[2023-10-10 03:50:30,630: INFO: main: #################################
+]
+[2023-10-10 03:50:38,390: INFO: main: ######## Stage Data Ingestion Stage started. ########]
+[2023-10-10 03:50:38,390: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 03:50:38,390: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 03:50:38,405: INFO: common: created directory at: artifacts]
+[2023-10-10 03:50:38,405: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-10 03:50:38,971: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 235962
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f116f8d895f14f1d6832a1e8f803faa6959f31c4a4b90ae9bcd2c78194b1a262"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 6A32:74FD:3E048C:4AE385:6525024E
+Accept-Ranges: bytes
+Date: Tue, 10 Oct 2023 07:50:41 GMT
+Via: 1.1 varnish
+X-Served-By: cache-atl18462-ATL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1696924241.929831,VS0,VE164
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 8a4e01c6d3501592ad31f2c364f2aef4117d485a
+Expires: Tue, 10 Oct 2023 07:55:41 GMT
+Source-Age: 0
+
+]
+[2023-10-10 03:50:39,009: INFO: main: ######## Stage Data Ingestion Stage completed. ########
+
+################################################]
+[2023-10-10 03:50:39,010: INFO: main: ######## Stage Data Validation Stage started. ########]
+[2023-10-10 03:50:39,019: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 03:50:39,021: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 03:50:39,022: INFO: common: created directory at: artifacts]
+[2023-10-10 03:50:39,023: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-10 03:50:39,025: INFO: main: ######## Stage Data Validation Stage completed. ########
+
+################################################]
+[2023-10-10 03:50:39,025: INFO: main: ######## Stage Data Transformation Stage started. ########]
+[2023-10-10 03:50:39,034: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 03:50:39,035: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 03:50:39,035: INFO: common: created directory at: artifacts]
+[2023-10-10 03:50:39,035: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-10 03:50:39,632: INFO: data_transformation: in train, We have a <class 'list'> of length 7314 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-10 03:50:39,705: INFO: data_transformation: in val, We have a <class 'list'> of length 4 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-10 03:50:39,705: INFO: data_transformation: in test, We have a <class 'list'> of length 4 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-10 03:50:39,716: INFO: main: ######## Stage Data Transformation Stage completed. ########
+
+################################################]
+[2023-10-10 03:50:39,717: INFO: main: ######## Stage Model Trainer stage started. ########]
+[2023-10-10 03:50:39,719: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 03:50:39,719: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 03:50:39,719: INFO: common: created directory at: artifacts]
+[2023-10-10 03:50:39,719: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-10 03:50:39,719: INFO: SentenceTransformer: Load pretrained SentenceTransformer: msmarco-distilbert-base-v4]
+[2023-10-10 03:50:41,396: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 03:50:44,708: INFO: EmbeddingSimilarityEvaluator: EmbeddingSimilarityEvaluator: Evaluating the model on  dataset after epoch 0:]
+[2023-10-10 03:50:45,428: INFO: EmbeddingSimilarityEvaluator: Cosine-Similarity :	Pearson: 0.6955	Spearman: 0.6325]
+[2023-10-10 03:50:45,428: INFO: EmbeddingSimilarityEvaluator: Manhattan-Distance:	Pearson: 0.7050	Spearman: 0.6325]
+[2023-10-10 03:50:45,428: INFO: EmbeddingSimilarityEvaluator: Euclidean-Distance:	Pearson: 0.7503	Spearman: 0.9487]
+[2023-10-10 03:50:45,428: INFO: EmbeddingSimilarityEvaluator: Dot-Product-Similarity:	Pearson: 0.6949	Spearman: 0.6325]
+[2023-10-10 03:50:45,428: INFO: SentenceTransformer: Save model to artifacts/model_trainer\saved-search-model]
+[2023-10-10 03:50:47,559: INFO: main: ######## Stage Model Trainer stage completed. ########
+
+################################################]
+[2023-10-10 03:50:47,559: INFO: main: ######## Stage Model Evaluation stage started. ########]
+[2023-10-10 03:50:47,583: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 03:50:47,596: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 03:50:47,596: INFO: common: created directory at: artifacts]
+[2023-10-10 03:50:47,596: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-10-10 03:50:47,596: INFO: SentenceTransformer: Load pretrained SentenceTransformer: cross-encoder/ms-marco-MiniLM-L-6-v2]
+[2023-10-10 03:50:48,560: WARNING: SentenceTransformer: No sentence-transformers model found with name C:\Users\shrin/.cache\torch\sentence_transformers\cross-encoder_ms-marco-MiniLM-L-6-v2. Creating a new one with MEAN pooling.]
+[2023-10-10 03:50:49,159: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 03:50:49,817: INFO: CrossEncoder: Use pytorch device: cpu]
+[2023-10-10 03:50:49,882: INFO: model_evaluation: Val accuracy with cross-encoders : 98.7500003632158]
+[2023-10-10 03:50:49,917: INFO: main: ######## Stage Model Evaluation stage completed. ########
+
+################################################]
+[2023-10-10 06:49:55,103: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 06:49:55,111: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 06:49:55,113: INFO: common: created directory at: artifacts]
+[2023-10-10 06:49:55,113: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-10-10 06:51:39,607: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 06:51:39,609: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 06:51:39,610: INFO: common: created directory at: artifacts]
+[2023-10-10 06:51:39,610: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-10-10 06:51:39,622: INFO: SentenceTransformer: Load pretrained SentenceTransformer: artifacts/model_trainer/saved-search-model]
+[2023-10-10 06:51:41,649: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 06:52:31,759: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 06:52:31,763: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 06:52:31,764: INFO: common: created directory at: artifacts]
+[2023-10-10 06:52:31,764: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-10-10 06:52:31,767: INFO: SentenceTransformer: Load pretrained SentenceTransformer: artifacts/model_trainer/saved-search-model]
+[2023-10-10 06:52:32,819: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 06:52:33,692: INFO: prediction: Searched for:{text}]
+[2023-10-10 06:52:33,693: INFO: prediction: Getting all available offers!!]
+[2023-10-10 06:52:33,737: INFO: prediction: Found all available offers!!]
+[2023-10-10 06:52:33,738: INFO: prediction: Filtering duplicate offers!!]
+[2023-10-10 06:52:35,113: INFO: CrossEncoder: Use pytorch device: cpu]
+[2023-10-10 06:52:36,558: INFO: prediction: Removed duplicate offers!!]
+[2023-10-10 06:52:36,558: INFO: prediction: Re-Ranking available offers!!]
+[2023-10-10 06:52:36,829: INFO: prediction: Re-Ranking Done!!]
+[2023-10-10 07:06:10,985: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 07:06:10,988: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 07:06:10,989: INFO: common: created directory at: artifacts]
+[2023-10-10 07:06:10,990: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-10-10 07:06:11,000: INFO: SentenceTransformer: Load pretrained SentenceTransformer: artifacts/model_trainer/saved-search-model]
+[2023-10-10 07:06:12,249: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 07:06:12,276: INFO: prediction: Searched for:{text}]
+[2023-10-10 07:06:12,276: INFO: prediction: Getting all available offers!!]
+[2023-10-10 07:06:12,278: INFO: prediction: Found all available offers!!]
+[2023-10-10 07:06:12,278: INFO: prediction: Filtering duplicate offers!!]
+[2023-10-10 07:06:13,528: INFO: CrossEncoder: Use pytorch device: cpu]
+[2023-10-10 07:06:14,178: INFO: prediction: Removed duplicate offers!!]
+[2023-10-10 07:06:14,179: INFO: prediction: Re-Ranking available offers!!]
+[2023-10-10 07:06:14,375: INFO: prediction: Re-Ranking Done!!]
+[2023-10-10 07:06:29,539: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 07:06:29,543: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 07:06:29,544: INFO: common: created directory at: artifacts]
+[2023-10-10 07:06:29,545: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-10-10 07:06:29,547: INFO: SentenceTransformer: Load pretrained SentenceTransformer: artifacts/model_trainer/saved-search-model]
+[2023-10-10 07:06:30,106: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 07:06:30,136: INFO: prediction: Searched for:{text}]
+[2023-10-10 07:06:30,136: INFO: prediction: Getting all available offers!!]
+[2023-10-10 07:06:30,137: INFO: prediction: Found all available offers!!]
+[2023-10-10 07:06:30,137: INFO: prediction: Filtering duplicate offers!!]
+[2023-10-10 07:06:31,046: INFO: CrossEncoder: Use pytorch device: cpu]
+[2023-10-10 07:06:31,749: INFO: prediction: Removed duplicate offers!!]
+[2023-10-10 07:06:31,749: INFO: prediction: Re-Ranking available offers!!]
+[2023-10-10 07:06:31,946: INFO: prediction: Re-Ranking Done!!]
+[2023-10-10 07:07:33,386: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 07:07:33,390: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 07:07:33,392: INFO: common: created directory at: artifacts]
+[2023-10-10 07:07:33,393: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-10-10 07:07:33,395: INFO: SentenceTransformer: Load pretrained SentenceTransformer: artifacts/model_trainer/saved-search-model]
+[2023-10-10 07:07:34,015: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 07:07:34,046: INFO: prediction: Searched for:{text}]
+[2023-10-10 07:07:34,046: INFO: prediction: Getting all available offers!!]
+[2023-10-10 07:07:34,048: INFO: prediction: Found all available offers!!]
+[2023-10-10 07:07:34,048: INFO: prediction: Filtering duplicate offers!!]
+[2023-10-10 07:07:35,080: INFO: CrossEncoder: Use pytorch device: cpu]
+[2023-10-10 07:07:35,820: INFO: prediction: Removed duplicate offers!!]
+[2023-10-10 07:07:35,820: INFO: prediction: Re-Ranking available offers!!]
+[2023-10-10 07:07:35,966: INFO: prediction: Re-Ranking Done!!]
+[2023-10-10 07:10:49,813: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 07:10:49,816: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 07:10:49,817: INFO: common: created directory at: artifacts]
+[2023-10-10 07:10:49,818: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-10-10 07:10:49,828: INFO: SentenceTransformer: Load pretrained SentenceTransformer: artifacts/model_trainer/saved-search-model]
+[2023-10-10 07:10:51,440: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 07:10:52,105: INFO: prediction: Searched for:{text}]
+[2023-10-10 07:10:52,105: INFO: prediction: Getting all available offers!!]
+[2023-10-10 07:10:52,134: INFO: prediction: Found all available offers!!]
+[2023-10-10 07:10:52,134: INFO: prediction: Filtering duplicate offers!!]
+[2023-10-10 07:10:53,498: INFO: CrossEncoder: Use pytorch device: cpu]
+[2023-10-10 07:10:54,220: INFO: prediction: Removed duplicate offers!!]
+[2023-10-10 07:10:54,220: INFO: prediction: Re-Ranking available offers!!]
+[2023-10-10 07:10:54,341: INFO: prediction: Re-Ranking Done!!]
+[2023-10-10 07:10:54,341: INFO: prediction: 	{hit['cross-encoder_score']}	{stored_offers[hit['corpus_id']]}]
+[2023-10-10 07:10:54,342: INFO: prediction: 	{hit['cross-encoder_score']}	{stored_offers[hit['corpus_id']]}]
+[2023-10-10 07:10:54,342: INFO: prediction: 	{hit['cross-encoder_score']}	{stored_offers[hit['corpus_id']]}]
+[2023-10-10 07:10:54,343: INFO: prediction: 	{hit['cross-encoder_score']}	{stored_offers[hit['corpus_id']]}]
+[2023-10-10 07:10:54,343: INFO: prediction: 	{hit['cross-encoder_score']}	{stored_offers[hit['corpus_id']]}]
+[2023-10-10 07:21:09,428: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 07:21:09,441: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 07:21:09,442: INFO: common: created directory at: artifacts]
+[2023-10-10 07:21:09,443: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-10-10 07:21:09,465: INFO: SentenceTransformer: Load pretrained SentenceTransformer: artifacts/model_trainer/saved-search-model]
+[2023-10-10 07:21:11,092: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 07:21:11,660: INFO: prediction: Searched for:{text}]
+[2023-10-10 07:21:11,660: INFO: prediction: Getting all available offers!!]
+[2023-10-10 07:21:11,677: INFO: prediction: Found all available offers!!]
+[2023-10-10 07:21:11,677: INFO: prediction: Filtering duplicate offers!!]
+[2023-10-10 07:21:12,924: INFO: CrossEncoder: Use pytorch device: cpu]
+[2023-10-10 07:21:13,600: INFO: prediction: Removed duplicate offers!!]
+[2023-10-10 07:21:13,600: INFO: prediction: Re-Ranking available offers!!]
+[2023-10-10 07:21:13,711: INFO: prediction: Re-Ranking Done!!]
+[2023-10-10 07:21:13,712: INFO: prediction: 	{hit['cross-encoder_score']}	{stored_offers[hit['corpus_id']]}]
+[2023-10-10 07:21:13,714: INFO: prediction: 	{hit['cross-encoder_score']}	{stored_offers[hit['corpus_id']]}]
+[2023-10-10 07:21:13,714: INFO: prediction: 	{hit['cross-encoder_score']}	{stored_offers[hit['corpus_id']]}]
+[2023-10-10 07:21:13,715: INFO: prediction: 	{hit['cross-encoder_score']}	{stored_offers[hit['corpus_id']]}]
+[2023-10-10 07:21:13,715: INFO: prediction: 	{hit['cross-encoder_score']}	{stored_offers[hit['corpus_id']]}]
+[2023-10-10 07:24:26,709: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 07:24:26,712: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 07:24:26,713: INFO: common: created directory at: artifacts]
+[2023-10-10 07:24:26,713: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-10-10 07:24:26,716: INFO: SentenceTransformer: Load pretrained SentenceTransformer: artifacts/model_trainer/saved-search-model]
+[2023-10-10 07:24:27,696: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 07:24:28,266: INFO: prediction: Searched for:walmart]
+[2023-10-10 07:24:28,267: INFO: prediction: Getting all available offers!!]
+[2023-10-10 07:24:28,295: INFO: prediction: Found all available offers!!]
+[2023-10-10 07:24:28,296: INFO: prediction: Filtering duplicate offers!!]
+[2023-10-10 07:24:29,460: INFO: CrossEncoder: Use pytorch device: cpu]
+[2023-10-10 07:24:30,232: INFO: prediction: Removed duplicate offers!!]
+[2023-10-10 07:24:30,232: INFO: prediction: Re-Ranking available offers!!]
+[2023-10-10 07:24:30,383: INFO: prediction: Re-Ranking Done!!]
+[2023-10-10 07:24:30,383: INFO: prediction: 	1.43	Arber, at Walmart	]
+[2023-10-10 07:24:30,383: INFO: prediction: 	1.0	Burt's Bees® products, select varieties, at Walmart	]
+[2023-10-10 07:24:30,384: INFO: prediction: 	0.22999999999999998	Little Bites® Spend $10 at Walmart®	]
+[2023-10-10 07:24:30,384: INFO: prediction: 	0.2	Tyson Products, select varieties, spend $15 at Walmart	]
+[2023-10-10 07:24:30,384: INFO: prediction: 	0.19	Burt's Bees Sensitive Lotions and Creams, select varieties, at Walmart	]
+[2023-10-10 07:26:38,053: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 07:26:38,056: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 07:26:38,056: INFO: common: created directory at: artifacts]
+[2023-10-10 07:26:38,057: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-10-10 07:26:38,059: INFO: SentenceTransformer: Load pretrained SentenceTransformer: artifacts/model_trainer/saved-search-model]
+[2023-10-10 07:26:38,941: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 07:26:39,380: INFO: prediction: Searched for:walmart]
+[2023-10-10 07:26:39,381: INFO: prediction: Getting all available offers!!]
+[2023-10-10 07:26:39,382: INFO: prediction: Found all available offers!!]
+[2023-10-10 07:26:39,383: INFO: prediction: Filtering duplicate offers!!]
+[2023-10-10 07:26:40,556: INFO: CrossEncoder: Use pytorch device: cpu]
+[2023-10-10 07:26:41,197: INFO: prediction: Removed duplicate offers!!]
+[2023-10-10 07:26:41,197: INFO: prediction: Re-Ranking available offers!!]
+[2023-10-10 07:26:41,313: INFO: prediction: Re-Ranking Done!!]
+[2023-10-10 07:26:41,314: INFO: prediction: 	1.43	Arber, at Walmart	]
+[2023-10-10 07:26:41,314: INFO: prediction: 	1.0	Burt's Bees® products, select varieties, at Walmart	]
+[2023-10-10 07:26:41,314: INFO: prediction: 	0.22999999999999998	Little Bites® Spend $10 at Walmart®	]
+[2023-10-10 07:26:41,315: INFO: prediction: 	0.2	Tyson Products, select varieties, spend $15 at Walmart	]
+[2023-10-10 07:26:41,315: INFO: prediction: 	0.19	Burt's Bees Sensitive Lotions and Creams, select varieties, at Walmart	]
+[2023-10-10 07:29:08,374: INFO: server: Started server process [19308]]
+[2023-10-10 07:29:08,376: INFO: on: Waiting for application startup.]
+[2023-10-10 07:29:08,376: INFO: on: Application startup complete.]
+[2023-10-10 07:29:08,377: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2023-10-10 07:30:44,152: INFO: main: This Project uses custom logger.
+]
+[2023-10-10 07:30:44,153: INFO: main: #################################
+]
+[2023-10-10 07:30:50,859: INFO: main: ######## Stage Data Ingestion Stage started. ########]
+[2023-10-10 07:30:50,866: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 07:30:50,875: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 07:30:50,876: INFO: common: created directory at: artifacts]
+[2023-10-10 07:30:50,877: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-10 07:30:50,878: INFO: data_ingestion: File already exists of size: ~ 230 KB]
+[2023-10-10 07:30:50,916: INFO: main: ######## Stage Data Ingestion Stage completed. ########
+
+################################################]
+[2023-10-10 07:30:50,917: INFO: main: ######## Stage Data Validation Stage started. ########]
+[2023-10-10 07:30:50,923: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 07:30:50,927: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 07:30:50,928: INFO: common: created directory at: artifacts]
+[2023-10-10 07:30:50,929: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-10 07:30:50,931: INFO: main: ######## Stage Data Validation Stage completed. ########
+
+################################################]
+[2023-10-10 07:30:50,931: INFO: main: ######## Stage Data Transformation Stage started. ########]
+[2023-10-10 07:30:50,931: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 07:30:50,931: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 07:30:50,931: INFO: common: created directory at: artifacts]
+[2023-10-10 07:30:50,941: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-10 07:30:51,688: INFO: data_transformation: in train, We have a <class 'list'> of length 7314 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-10 07:30:51,767: INFO: data_transformation: in val, We have a <class 'list'> of length 4 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-10 07:30:51,769: INFO: data_transformation: in test, We have a <class 'list'> of length 4 containing <class 'sentence_transformers.readers.InputExample.InputExample'>'s.]
+[2023-10-10 07:30:51,773: INFO: main: ######## Stage Data Transformation Stage completed. ########
+
+################################################]
+[2023-10-10 07:30:51,774: INFO: main: ######## Stage Model Trainer stage started. ########]
+[2023-10-10 07:30:51,779: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 07:30:51,782: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 07:30:51,782: INFO: common: created directory at: artifacts]
+[2023-10-10 07:30:51,783: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-10 07:30:51,783: INFO: SentenceTransformer: Load pretrained SentenceTransformer: msmarco-distilbert-base-v4]
+[2023-10-10 07:30:55,460: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 07:31:01,914: INFO: EmbeddingSimilarityEvaluator: EmbeddingSimilarityEvaluator: Evaluating the model on  dataset after epoch 0:]
+[2023-10-10 07:31:02,162: INFO: EmbeddingSimilarityEvaluator: Cosine-Similarity :	Pearson: 0.9067	Spearman: 0.9487]
+[2023-10-10 07:31:02,163: INFO: EmbeddingSimilarityEvaluator: Manhattan-Distance:	Pearson: 0.9130	Spearman: 0.9487]
+[2023-10-10 07:31:02,163: INFO: EmbeddingSimilarityEvaluator: Euclidean-Distance:	Pearson: 0.9316	Spearman: 0.9487]
+[2023-10-10 07:31:02,164: INFO: EmbeddingSimilarityEvaluator: Dot-Product-Similarity:	Pearson: 0.8919	Spearman: 0.9487]
+[2023-10-10 07:31:02,166: INFO: SentenceTransformer: Save model to artifacts/model_trainer\saved-search-model]
+[2023-10-10 07:31:04,031: INFO: main: ######## Stage Model Trainer stage completed. ########
+
+################################################]
+[2023-10-10 07:31:04,031: INFO: main: ######## Stage Model Evaluation stage started. ########]
+[2023-10-10 07:31:04,049: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 07:31:04,052: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 07:31:04,053: INFO: common: created directory at: artifacts]
+[2023-10-10 07:31:04,055: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-10-10 07:31:04,055: INFO: SentenceTransformer: Load pretrained SentenceTransformer: artifacts/model_trainer/saved-search-model]
+[2023-10-10 07:31:04,717: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 07:31:06,031: INFO: CrossEncoder: Use pytorch device: cpu]
+[2023-10-10 07:31:06,119: INFO: model_evaluation: Val accuracy with cross-encoders : 98.7500003632158]
+[2023-10-10 07:31:06,139: INFO: main: ######## Stage Model Evaluation stage completed. ########
+
+################################################]
+[2023-10-10 07:31:35,373: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-10 07:31:35,375: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-10 07:31:35,376: INFO: common: created directory at: artifacts]
+[2023-10-10 07:31:35,376: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-10-10 07:31:35,402: INFO: SentenceTransformer: Load pretrained SentenceTransformer: artifacts/model_trainer/saved-search-model]
+[2023-10-10 07:31:37,886: INFO: SentenceTransformer: Use pytorch device: cpu]
+[2023-10-10 07:31:38,713: INFO: prediction: Searched for:walmart]
+[2023-10-10 07:31:38,713: INFO: prediction: Getting all available offers!!]
+[2023-10-10 07:31:38,757: INFO: prediction: Found all available offers!!]
+[2023-10-10 07:31:38,762: INFO: prediction: Filtering duplicate offers!!]
+[2023-10-10 07:31:39,935: INFO: CrossEncoder: Use pytorch device: cpu]
+[2023-10-10 07:31:41,163: INFO: prediction: Removed duplicate offers!!]
+[2023-10-10 07:31:41,167: INFO: prediction: Re-Ranking available offers!!]
+[2023-10-10 07:31:41,372: INFO: prediction: Re-Ranking Done!!]
+[2023-10-10 07:31:41,373: INFO: prediction: 	1.43	Arber, at Walmart	]
+[2023-10-10 07:31:41,374: INFO: prediction: 	1.0	Burt's Bees® products, select varieties, at Walmart	]
+[2023-10-10 07:31:41,374: INFO: prediction: 	0.22999999999999998	Little Bites® Spend $10 at Walmart®	]
+[2023-10-10 07:31:41,374: INFO: prediction: 	0.2	Tyson Products, select varieties, spend $15 at Walmart	]
+[2023-10-10 07:31:41,375: INFO: prediction: 	0.19	Burt's Bees Sensitive Lotions and Creams, select varieties, at Walmart	]
+[2023-10-10 07:32:47,805: INFO: server: Shutting down]
+[2023-10-10 07:32:47,923: INFO: on: Waiting for application shutdown.]
+[2023-10-10 07:32:47,923: INFO: on: Application shutdown complete.]
+[2023-10-10 07:32:47,924: INFO: server: Finished server process [19308]]
