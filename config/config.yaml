@@ -20,3 +20,9 @@ model_trainer:
   data_path: artifacts/data_transformation
   model_ckpt: msmarco-distilbert-base-v4
  
+model_evaluation:
+  root_dir: artifacts/model_evaluation
+  data_path: artifacts/data_transformation/
+  model_path: cross-encoder/ms-marco-MiniLM-L-6-v2
+  tokenizer_path: artifacts/model_trainer/saved-search-model
+  metric_file_name: artifacts/model_evaluation/metrics.csv
